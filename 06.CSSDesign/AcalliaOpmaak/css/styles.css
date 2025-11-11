@@ -2,7 +2,7 @@
  *
  * Common styles
  *
- * @author !put your name here!
+ * @author Halil Ibrahim Eryuruk 
  *
  */
 
@@ -11,7 +11,37 @@
    =========================================== */
 
 /* html, body and general element styles here */
+
 /* ... */
+
+html {
+   background-color: #dfdfdf;
+}
+
+body {
+   background-color: white;
+   font-family: Roboto; 
+   font-size: 18px;
+   line-height: 1.8;
+}
+
+h3 {
+   color: #B52025;
+   text-decoration: none;
+}
+
+h3:hover {
+   text-decoration: underline;
+}
+
+h3::after {
+   content: " \2192";
+}
+
+
+
+
+
 
 
 /* ===========================================
@@ -19,7 +49,38 @@
    =========================================== */
 
 /* menu styles here */
+
 /* ... */
+
+nav ul {
+   color: black;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   gap: 5px;
+}
+
+nav ul li a {
+   color: black;
+   text-decoration: none;
+}
+
+nav ul li a:hover {
+   color: White;
+   background-color: #B52025;
+   padding: 8px 12px;
+   transition: 0.5s;
+}
+
+.active {
+   color: white;
+   padding: 8px 12px;
+   background-color: #B52025;
+   text-align: center;
+   text-decoration: none;
+}
+
 
 
 
@@ -28,8 +89,21 @@
    =========================================== */
 
 /* banner styles here */
+
 /* ... */
 
+#banner {
+   background-image: url('../img/banner.jpg');
+   border: #B52025 5px solid;
+   box-shadow: 1px 10px 10px grey;
+}
+
+#banner p {
+   background-color: black;
+   opacity: 0.7;
+   color: white;
+   font-size: 15px;
+}
 
 
 /* ===========================================
@@ -37,12 +111,65 @@
    =========================================== */
 
 /* main styles here */
+
 /* ... */
 
+main {
+   font-size: 13px;
+}
+
+.more {
+   text-align: right;
+}
+
+
+.more a {
+   color: #B52025;
+   padding: 5px 10px;
+   border: #B52025 1px solid;
+   border-radius: 10px;
+   text-decoration: none;
+}
+
+.more a::after {
+   content: " \00BB";
+  }
+
+.more a:hover {
+   text-decoration: underline;
+   background-color: rgb(255,0,0,0.1);
+}
+
+#content img {
+   Border: 1px solid darkgray;
+}
+
+.newsletter label {
+   display: none;
+}
+
+.newsletter input#email {
+   padding: 7px;
+   width: 100%;
+   background-color: #FDEAEB;
+}
+
+button {
+   background-color: #B52025;
+   color: white;
+}
 
 /* ===========================================
    Footer
    =========================================== */
 
 /* footer styles here */
+
 /* ... */
+
+footer {
+   background-color: #dadada;
+   text-align: center;
+   border-top: 2px dotted darkgray;
+}
+
